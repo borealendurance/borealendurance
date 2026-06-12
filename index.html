@@ -2,173 +2,174 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boréal Endurance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boréal Endurance</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            line-height: 1.8;
-            color: #333;
-        }
+<style>
 
-        header {
-            background-color: #0f3b2e;
-            padding: 20px 30px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-       nav a {
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+
+header {
+    background: #0b3d2e;
+    padding: 22px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 45px;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding-bottom: 8px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
 
-nav a.active {
+.menu a.active {
     border-bottom: 4px solid #a8d65a;
 }
-        .hero {
-            min-height: 620px;
-            background-image:
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("banniere.jpg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-        }
 
-        .hero-content {
-            max-width: 700px;
-            margin-left: 7%;
-            color: white;
-        }
+/* BANNIÈRE */
 
-        .hero h1 {
-            font-size: 4rem;
-            margin: 0 0 20px;
-            color: white;
-        }
+.hero {
+    height: 700px;
 
-        .hero-line {
-            width: 80px;
-            height: 5px;
-            background-color: #a8d65a;
-            margin-bottom: 30px;
-        }
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("banniere.jpg");
 
-        .hero p {
-            font-size: 2rem;
-            font-weight: bold;
-            line-height: 1.3;
-            margin-bottom: 20px;
-        }
+    background-size: cover;
+    background-position: center;
 
-        .hero .subtitle {
-            color: #b7dc6f;
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 35px;
-        }
+    display: flex;
+    align-items: center;
+}
 
-        .button {
-            display: inline-block;
-            padding: 16px 28px;
-            background-color: #a8d65a;
-            color: #0f3b2e;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
+.hero-content {
+    max-width: 700px;
+    margin-left: 70px;
+}
 
-        .button:hover {
-            background-color: #95c64e;
-        }
+.hero h1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
 
-        main {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
+.trait {
+    width: 80px;
+    height: 5px;
+    background: #a8d65a;
+    margin-bottom: 30px;
+}
 
-        h2 {
-            color: #0f3b2e;
-            font-size: 2rem;
-        }
+.hero h2 {
+    color: white;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
 
-        .small-line {
-            width: 50px;
-            height: 4px;
-            background-color: #a8d65a;
-            margin: 15px auto 25px;
-        }
+.hero p {
+    color: #a8d65a;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
 
-        @media (max-width: 700px) {
-            .hero {
-                min-height: 500px;
-            }
+.bouton {
+    display: inline-block;
+    background: #a8d65a;
+    color: #0b3d2e;
+    text-decoration: none;
+    padding: 18px 40px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 
-            .hero-content {
-                margin: 40px 25px;
-            }
+.bouton:hover {
+    opacity: 0.9;
+}
 
-            .hero h1 {
-                font-size: 2.7rem;
-            }
+</style>
 
-            .hero p {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="apropos.html">À propos</a>
-        <a href="mission.html">Mission</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<nav>
+
+<div class="logo">
+🌲 Boréal Endurance
+</div>
+
+<div class="menu">
+<a class="active" href="index.html">Accueil</a>
+<a href="apropos.html">À propos</a>
+<a href="mission.html">Mission</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+
 </header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Boréal Endurance</h1>
 
-        <div class="hero-line"></div>
+<div class="hero-content">
 
-        <p>
-            L'endurance se construit<br>
-            dans la constance.
-        </p>
+<h1>Boréal Endurance</h1>
 
-        <div class="subtitle">
-            Coaching personnalisé en course à pied et triathlon.
-        </div>
+<div class="trait"></div>
 
-        <a class="button" href="contact.html">Contactez-nous</a>
-    </div>
+<h2>
+L'endurance se construit<br>
+dans la constance.
+</h2>
+
+<p>
+Coaching personnalisé en course à pied et triathlon.
+</p>
+
+<a href="contact.html" class="bouton">
+Contactez-nous
+</a>
+
+</div>
+
 </section>
 
-<main>
-    <h2>Un accompagnement adapté à vous</h2>
-
-    <div class="small-line"></div>
-
-    <p>
-        Plans d'entraînement personnalisés, suivi rigoureux et approche humaine
-        pour vous aider à atteindre vos objectifs.
-    </p>
-</main>
-
 </body>
-
 </html>
