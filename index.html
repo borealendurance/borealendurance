@@ -1,252 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boréal Endurance</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-<h1 style="background:red;color:white;padding:20px;">
-TEST DEPLOY 13 JUIN
-</h1>
-header {
-    background-color: #0b4a3a;
-    padding: 24px 50px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 35px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding-bottom: 8px;
-}
-
-nav a.active {
-    border-bottom: 4px solid #9fd26c;
-}
-
-.hero {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.38),
-        rgba(0,0,0,0.38)
-    ), url("banniere.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 650px;
-    display: flex;
-    align-items: center;
-}
-
-.hero-content {
-    margin-left: 70px;
-    max-width: 850px;
-}
-
-.hero-brand {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    margin-bottom: 32px;
-}
-
-.hero-logo {
-    width: 135px;
-    height: auto;
-}
-
-.hero-title {
-    color: white;
-    font-size: 4.6rem;
-    font-weight: bold;
-    line-height: 1.05;
-}
-
-.hero-title span {
-    display: block;
-}
-
-.green-line {
-    width: 110px;
-    height: 7px;
-    background-color: #9fd26c;
-    margin-bottom: 35px;
-}
-
-.hero p {
-    color: white;
-    font-size: 2.1rem;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
-.hero-subtitle {
-    color: #9fd26c;
-    font-size: 1.35rem;
-    font-weight: bold;
-    margin-bottom: 35px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #9fd26c;
-    color: #0b4a3a;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 16px 32px;
-    border-radius: 6px;
-}
-
-.content {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
-    line-height: 1.6;
-}
-
-.content h2 {
-    color: #0b4a3a;
-    margin-bottom: 20px;
-}
-
-.content p {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #0b4a3a;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .hero {
-        min-height: 560px;
-    }
-
-    .hero-content {
-        margin: 35px;
-    }
-
-    .hero-brand {
-        align-items: flex-start;
-        gap: 18px;
-    }
-
-    .hero-logo {
-        width: 85px;
-    }
-
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <nav>
-        <a href="index.html" class="active">Accueil</a>
-        <a href="apropos.html">À propos</a>
-        <a href="mission.html">Mission</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-content">
-
-        <div class="hero-brand">
-            <img src="logo2.png" alt="Logo Boréal Endurance" class="hero-logo">
-
-            <div class="hero-title">
-                <span>Boréal</span>
-                <span>Endurance</span>
-            </div>
-        </div>
-
-        <div class="green-line"></div>
-
-        <p>
-            L'endurance se construit<br>
-            dans la constance.
-        </p>
-
-        <div class="hero-subtitle">
-            Coaching personnalisé en course à pied et triathlon.
-        </div>
-
-        <a href="contact.html" class="button">Contactez-nous</a>
-
-    </div>
-</section>
-
-<section class="content">
-    <h2>Coaching personnalisé en course à pied et triathlon</h2>
-
-    <p>
-        J'accompagne les adultes qui souhaitent progresser en endurance grâce à une approche fondée sur la science, la communication, le réalisme et la constance.
-    </p>
-
-    <p>
-        Que vous prépariez votre première course ou votre prochain défi, l'objectif est de construire des habitudes durables qui vous permettront de progresser tout en respectant votre réalité.
-    </p>
-</section>
-
-<section class="content">
-    <h2>Pourquoi Boréal Endurance ?</h2>
-
-    <p>
-        Les progrès les plus importants ne viennent pas d'une séance exceptionnelle ou d'un programme miracle.
-    </p>
-
-    <p>
-        Ils naissent de milliers de petites décisions répétées jour après jour.
-    </p>
-</section>
-
-<footer>
-    © 2026 Boréal Endurance
-</footer>
-
-</body>
-</html>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boréal Endurance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #0b4a3a;
+            padding: 24px 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 35px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding-bottom: 8px;
+        }
+        nav a.active {
+            border-bottom: 4px solid #9fd26c;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)), url("banniere.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content {
+            margin-left: 70px;
+            max-width: 850px;
+        }
+        .hero-brand {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            margin-bottom: 32px;
+        }
+        .hero-logo {
+            width: 250px;
+            height: auto;
+        }
+        .hero-title {
+            color: white;
+            font-size: 4.6rem;
+            font-weight: bold;
+            line-height: 1.05;
+        }
+        .hero-title span {
+            display: block;
+        }
+        .green-line {
+            width: 110px;
+            height: 7px;
+            background-color: #9fd26c;
+            margin-bottom: 35px;
+        }
+        .hero p {
+            color: white;
+            font-size: 2.1rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        .hero-subtitle {
+            color: #9fd26c;
+            font-size: 1.35rem;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #9fd26c;
+            color: #0b4a3a;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 16px 32px;
+            border-radius: 6px;
+        }
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+            line-height: 1.6;
+        }
+        .content h2 {
+            color: #0b4a3a;
+            margin-bottom: 20px;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #0b4a3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .hero {
+                min-height: 560px;
+            }
+            .hero-content {
+                margin: 35px;
+            }
+            .hero-brand {
+                align-items: flex-start;
+                gap: 18px;
+            }
+            .hero-logo {
+                width: 150px;
+            }
+            .hero-title {
+                font-size: 3rem;
+            }
+            .hero p {
+                font-size: 1.5rem;
+            }
+            .hero-subtitle
