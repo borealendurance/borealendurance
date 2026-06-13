@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Boréal Endurance</title>
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
@@ -16,160 +14,236 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: #333;
 }
 
-/* MENU */
-
 header {
-    background: #0b3d2e;
-    padding: 22px 50px;
+    background-color: #0b4a3a;
+    padding: 24px 50px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
 }
 
-.logo {
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.menu {
-    display: flex;
-    gap: 45px;
-}
-
-.menu a {
+nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.15rem;
-    font-weight: 600;
-    padding-bottom: 10px;
+    font-weight: bold;
+    padding-bottom: 8px;
 }
 
-.menu a.active {
-    border-bottom: 4px solid #a8d65a;
+nav a.active {
+    border-bottom: 4px solid #9fd26c;
 }
-
-/* BANNIÈRE */
 
 .hero {
-    height: 700px;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
-    ),
-    url("banniere.jpg");
-
+    background-image: linear-gradient(
+        rgba(0,0,0,0.38),
+        rgba(0,0,0,0.38)
+    ), url("banniere.jpg");
     background-size: cover;
     background-position: center;
-
+    min-height: 650px;
     display: flex;
     align-items: center;
 }
 
 .hero-content {
-    max-width: 700px;
     margin-left: 70px;
+    max-width: 850px;
 }
 
-.hero h1 {
+.hero-brand {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+
+.hero-logo {
+    width: 135px;
+    height: auto;
+}
+
+.hero-title {
     color: white;
-    font-size: 5rem;
-    margin-bottom: 25px;
+    font-size: 4.6rem;
+    font-weight: bold;
+    line-height: 1.05;
 }
 
-.trait {
-    width: 80px;
-    height: 5px;
-    background: #a8d65a;
-    margin-bottom: 30px;
+.hero-title span {
+    display: block;
 }
 
-.hero h2 {
+.green-line {
+    width: 110px;
+    height: 7px;
+    background-color: #9fd26c;
+    margin-bottom: 35px;
+}
+
+.hero p {
     color: white;
-    font-size: 3rem;
+    font-size: 2.1rem;
+    font-weight: bold;
     line-height: 1.2;
     margin-bottom: 25px;
 }
 
-.hero p {
-    color: #a8d65a;
-    font-size: 1.6rem;
+.hero-subtitle {
+    color: #9fd26c;
+    font-size: 1.35rem;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
-.bouton {
+.button {
     display: inline-block;
-    background: #a8d65a;
-    color: #0b3d2e;
+    background-color: #9fd26c;
+    color: #0b4a3a;
     text-decoration: none;
-    padding: 18px 40px;
-    border-radius: 8px;
-    font-size: 1.3rem;
     font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 6px;
 }
 
-.bouton:hover {
-    opacity: 0.9;
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+    line-height: 1.6;
 }
 
+.content h2 {
+    color: #0b4a3a;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0b4a3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        margin: 35px;
+    }
+
+    .hero-brand {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .hero-logo {
+        width: 85px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
 </style>
-
 </head>
 
 <body>
 
 <header>
-
-<nav>
-
-<div class="logo">
-🌲 Boréal Endurance
-</div>
-
-<div class="menu">
-<a class="active" href="index.html">Accueil</a>
-<a href="apropos.html">À propos</a>
-<a href="mission.html">Mission</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-
+    <nav>
+        <a href="index.html" class="active">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="mission.html">Mission</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
 <section class="hero">
+    <div class="hero-content">
 
-<div class="hero-content">
+        <div class="hero-brand">
+            <img src="logo.png" alt="Logo Boréal Endurance" class="hero-logo">
 
-<h1>Boréal Endurance</h1>
+            <div class="hero-title">
+                <span>Boréal</span>
+                <span>Endurance</span>
+            </div>
+        </div>
 
-<div class="trait"></div>
+        <div class="green-line"></div>
 
-<h2>
-L'endurance se construit<br>
-dans la constance.
-</h2>
+        <p>
+            L'endurance se construit<br>
+            dans la constance.
+        </p>
 
-<p>
-Coaching personnalisé en course à pied et triathlon.
-</p>
+        <div class="hero-subtitle">
+            Coaching personnalisé en course à pied et triathlon.
+        </div>
 
-<a href="contact.html" class="bouton">
-Contactez-nous
-</a>
+        <a href="contact.html" class="button">Contactez-nous</a>
 
-</div>
-
+    </div>
 </section>
+
+<section class="content">
+    <h2>Coaching personnalisé en course à pied et triathlon</h2>
+
+    <p>
+        J'accompagne les adultes qui souhaitent progresser en endurance grâce à une approche fondée sur la science, la communication, le réalisme et la constance.
+    </p>
+
+    <p>
+        Que vous prépariez votre première course ou votre prochain défi, l'objectif est de construire des habitudes durables qui vous permettront de progresser tout en respectant votre réalité.
+    </p>
+</section>
+
+<section class="content">
+    <h2>Pourquoi Boréal Endurance ?</h2>
+
+    <p>
+        Les progrès les plus importants ne viennent pas d'une séance exceptionnelle ou d'un programme miracle.
+    </p>
+
+    <p>
+        Ils naissent de milliers de petites décisions répétées jour après jour.
+    </p>
+</section>
+
+<footer>
+    © 2026 Boréal Endurance
+</footer>
 
 </body>
 </html>
